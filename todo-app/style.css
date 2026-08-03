@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #F4F6F5;
+    color: #22303C;
+    padding: 2rem 1rem;
+}
+
+main {
+    max-width: 420px;
+    margin: 0 auto;
+    background: #FFFFFF;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: #1B3A4B;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+}
+
+#task-form {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+#task-input {
+    flex: 1;
+    padding: 0.5rem 0.6rem;
+    border: 1px solid #D6D9D6;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+#task-form button {
+    background-color: #D9A441;
+    color: #1B3A4B;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.filters {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.filter-btn {
+    background: none;
+    border: 1px solid #D6D9D6;
+    padding: 0.3rem 0.7rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.85rem;
+}
+
+.filter-btn.active {
+    background-color: #1B3A4B;
+    color: #FFFFFF;
+    border-color: #1B3A4B;
+}
+
+#task-list {
+    list-style: none;
+}
+
+#task-list li {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #EEE;
+}
+
+#task-list li.completed span {
+    text-decoration: line-through;
+    color: #9AA5AB;
+}
+
+#task-list li span {
+    flex: 1;
+}
+
+.delete-btn {
+    background: none;
+    border: none;
+    color: #C0392B;
+    font-size: 1.1rem;
+    cursor: pointer;
+    line-height: 1;
+}
+
+#task-count {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #6B7B85;
+}
